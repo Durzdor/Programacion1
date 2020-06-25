@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
    private void FootstepsAudio()
    {
-      
+      // si se cambia de direccion en el aire se rompe
       if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
       {
          if (!isGrounded) return;
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
            currentJumps--;
            footstepSound.mute = true;
            jumpSound.Play();
-           animator.SetBool("isJumping", true);
+           animator.SetTrigger("Jump");
            rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
          }
       } 
@@ -133,7 +133,6 @@ public class PlayerController : MonoBehaviour
       footstepSound.mute = false;
       FootstepsAudio();
       animator.SetBool("isFalling", false);
-      animator.SetBool("isJumping", false);
       currentJumps = GameManager.Instance.maxJumps;
    }
 
@@ -163,7 +162,7 @@ public class PlayerController : MonoBehaviour
       var deltaJump = Mathf.Abs(lastPositionCheck.y) - Mathf.Abs(transform.position.y);
       if (Mathf.Sign(deltaJump) > 0 && !isGrounded)
       {
-         animator.SetBool("isFalling", true);
+        animator.SetBool("isFalling", true);
       }
       lastPositionCheck = transform.position;
    }
@@ -173,5 +172,4 @@ public class PlayerController : MonoBehaviour
       animator.SetBool("isAttacking", false);
       Instantiate(projectilePrefab, shootFrom.transform.position, shootFrom.rotation);
    }
-   
 }

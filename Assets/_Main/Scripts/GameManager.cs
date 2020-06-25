@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public int maxLives;
     public float maxHitPoints;
-    public static int currentLives;
-    public static float currentHitPoints;
+    public int currentLives;
+    public float currentHitPoints;
     public int maxJumps;
     public int maxAmmo;
     [SerializeField] private PlayerController myPlayerController;

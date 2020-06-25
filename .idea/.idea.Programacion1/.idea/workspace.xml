@@ -35,10 +35,10 @@
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/AmmoDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Floating.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/ExtraLifePowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Wintrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +83,8 @@
       <workItem from="1592862309168" duration="20874000" />
       <workItem from="1592948693607" duration="3020000" />
       <workItem from="1593050218509" duration="18255000" />
+      <workItem from="1593109647449" duration="6628000" />
+      <workItem from="1593118057332" duration="155000" />
     </task>
     <servers />
   </component>
