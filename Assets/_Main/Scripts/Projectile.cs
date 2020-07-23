@@ -31,9 +31,20 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Blob"))
         {
-            other.gameObject.GetComponent<EnemyBehaviour>().TakeDamage(damage);
+            other.gameObject.GetComponent<BlobBehaviour>().TakeDamage(damage);
+            Kill();
+        }
+
+        if (other.gameObject.CompareTag("Fungi"))
+        {
+            other.gameObject.GetComponent<FungiBehaviour>().TakeDamage(damage);
+            Kill();
+        }
+        if (other.gameObject.CompareTag("Bat"))
+        {
+            other.gameObject.GetComponent<BatBehaviour>().TakeDamage(damage);
             Kill();
         }
     }

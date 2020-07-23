@@ -120,7 +120,6 @@ public class PlayerController : MonoBehaviour
          currentAmmo--;
          GameManager.Instance.AmmoForceUpdate();
          ammoFull = false;
-         //Instantiate(projectilePrefab, shootFrom.transform.position, shootFrom.rotation);
       }
    }
 
@@ -171,5 +170,20 @@ public class PlayerController : MonoBehaviour
    {
       animator.SetBool("isAttacking", false);
       Instantiate(projectilePrefab, shootFrom.transform.position, shootFrom.rotation);
+   }
+   private void OnTriggerStay2D(Collider2D other)
+   {
+      if(other.gameObject.tag == "Platform")
+      {
+         transform.parent = other.transform;
+      }
+   }
+ 
+   private void OnTriggerExit2D(Collider2D other)
+   {
+      if(other.gameObject.tag == "Platform")
+      {
+         transform.parent = null;
+      }
    }
 }

@@ -4,30 +4,36 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    [SerializeField] private int maxHitPoints;
-    [SerializeField] private int currentHitPoints;
+
+    [SerializeField] private int maxHitpoints;
+    [SerializeField] private int currentHitpoints;
+    [SerializeField] private int damage;
+    [SerializeField] private Animator animator;
+    [SerializeField] private BlobBehaviour blob;
     
 
     private void Awake()
     {
-        currentHitPoints = maxHitPoints;
+        currentHitpoints = maxHitpoints;
+        animator = GetComponent<Animator>();
+        blob = GetComponent<BlobBehaviour>();
     }
 
     private void Start()
     {
-         
+        blob.canMove = true;
+        animator.SetBool("isDead", false);
     }
 
-    private void ShootProjectile()
-    {
-           
-    }
 
     public void TakeDamage(int damageTaken)
     {
-        currentHitPoints -= damageTaken;
-        if (currentHitPoints > 0) return;
-        Death();
+        currentHitpoints -= damageTaken;
+        animator.SetTrigger("isHit");
+        if (currentHitpoints > 0) return;
+        animator.SetBool("isDead", true);
+        blob.canMove = false;
+        Invoke(nameof(Death), 1f);
     }
 
     private void Death()

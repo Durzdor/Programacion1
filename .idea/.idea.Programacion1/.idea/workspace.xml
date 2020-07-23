@@ -9,16 +9,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/ExtraHitPointsPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/MovingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/CreditsMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/DeathMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/ExtraJumpPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/Floating.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/ExtraLifePowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/Parallax.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/ToxicGround.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/FungiBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/SmokeAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/BlobBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/0a/c337306e/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/HealthDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/CursorImage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/AmmoDrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/BatBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/Wintrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Main/Scripts/ExtraAmmoPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
@@ -26,8 +36,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/ExtraHitPointsPowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/HealthDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/ExtraJumpPowerUp.cs" />
@@ -37,8 +45,20 @@
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Floating.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/ExtraLifePowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Wintrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/CursorImage.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BlobBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/ToxicGround.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/MovingPlatform.cs" />
         <option value="$PROJECT_DIR$/Assets/_Main/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/BatBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/FungiBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/CreditsMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/DeathMenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/MainMenuController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Main/Scripts/SmokeAttack.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +105,10 @@
       <workItem from="1593050218509" duration="18255000" />
       <workItem from="1593109647449" duration="6628000" />
       <workItem from="1593118057332" duration="155000" />
+      <workItem from="1593118987601" duration="669000" />
+      <workItem from="1593125254250" duration="943000" />
+      <workItem from="1595406750666" duration="14083000" />
+      <workItem from="1595510393154" duration="25524000" />
     </task>
     <servers />
   </component>

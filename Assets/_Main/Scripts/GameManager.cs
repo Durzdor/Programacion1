@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 using Image = UnityEngine.UI.Image;
 
 public class GameManager : MonoBehaviour
@@ -46,6 +48,7 @@ public class GameManager : MonoBehaviour
 
     private void LoadStats()
     {
+        Cursor.visible = false;
         currentLives = maxLives;
         currentHitPoints = maxHitPoints;
         myPlayerController.Stats(maxAmmo, maxJumps);
@@ -69,9 +72,13 @@ public class GameManager : MonoBehaviour
         currentHitPoints = maxHitPoints;
         myPlayerController.GetComponent<Animator>().SetBool("isDead", true);
         deathSound.Play();
-        Invoke(nameof(Respawn),deathSound.clip.length);
-        if (currentLives > 0) return;
-        GameOver();
+        if (currentLives > 0)
+        {
+          Invoke(nameof(Respawn),deathSound.clip.length);
+          return;
+        }
+        Invoke(nameof(GameOver),1f);
+        
     }
 
     private void HitAnimationDuration()
@@ -81,7 +88,7 @@ public class GameManager : MonoBehaviour
 
     private void Respawn()
     {
-        myPlayerController.transform.position = new Vector3(-21,-3,0);
+        myPlayerController.transform.position = new Vector3(12,-3,0);
         HealthBarFillMath();
         myPlayerController.GetComponent<Animator>().SetBool("isDead", false);
         myPlayerController.canMove = true;
@@ -109,22 +116,12 @@ public class GameManager : MonoBehaviour
     
     private void GameOver()
     {
-        if (Application.isEditor)
-        {
-            EditorApplication.isPlaying = false;
-        }
-        // Debug.Log("Game Over");
-        // Time.timeScale = 0.0f;
+        SceneManager.LoadScene("DeathMenu");
     }
 
     public void WinGame()
     {
-        if (Application.isEditor)
-        {
-            EditorApplication.isPlaying = false;
-        }
-        // Debug.Log("You Win");
-        // Time.timeScale = 0.0f;
+        SceneManager.LoadScene("Credits");
     }
 
     public void HealthBarFillMath()

@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f2aef328ea024646a25977dbbb91077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
+  jumpForce: 22
   speed: 4
   rb2D: {fileID: 0}
   isGrounded: 1
